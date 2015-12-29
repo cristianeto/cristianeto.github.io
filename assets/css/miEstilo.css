@@ -42,4 +42,8 @@ a>.fa-twitter-square{
 a>.fa-facebook-official{
 	color: #2E4D88;
 }
-
+.fotoCristianeto{
+	height: 30vh;
+	border: 3px solid 	#005b96;
+	border-radius: 70px;
+}
