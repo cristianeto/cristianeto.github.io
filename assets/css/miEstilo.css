@@ -1,0 +1,17 @@
+body{
+	font-family: Calibri;
+	color:#973024;
+}
+
+.principal>main{
+	background: url(../img/fondo2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	font-family: Calibri;
+	min-height:   100vh;
+}
+
+.titulo-pagina{
+	font-size: 3.8em;
+}
