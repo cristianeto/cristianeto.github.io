@@ -47,6 +47,9 @@ a>.fa-facebook-official{
 	border: 3px solid 	#005b96;
 	border-radius: 100px;
 }
+.ed-item>img{
+	margin: 3em;
+}
 img{
 	transition: all .3s;
 }
