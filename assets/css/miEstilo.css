@@ -45,10 +45,10 @@ a>.fa-facebook-official{
 .fotoCristianeto{
 	height: 30vh;
 	border: 3px solid 	#005b96;
-	border-radius: 100px;
+	//border-radius: 100px;
 }
 .ed-item>img{
-	margin: 3em;
+	margin: 2em;
 }
 img{
 	transition: all .3s;
