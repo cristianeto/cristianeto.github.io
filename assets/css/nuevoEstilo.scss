@@ -1,5 +1,41 @@
-$colorParrafo: #111;
+.mensaje{
+  border: 1px solid #aaa;
+  font-size: .8em;
 
-p{
-  color: $colorParrafo;
+  .error &{
+    color:#fff;
+    background: red;
+  }
+}
+
+.autores{
+  display: table;
+  &--item{
+    display: table-cell;
+  }
+}
+
+
+div{
+  width: 100%;
+  @media screen and(min-width:1025px){
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+//Selectores con for
+//Each es como un for pero con iteraciones definidas
+$sizes:(movil: 480px,
+        tablet:768px,
+        web:1025px,
+        hd:1400
+        );
+@each  $size, $screen-size in $sizes{
+  @media all and(min-width: #{$screen-size}){
+    @for $i from 1 through 20{
+      .#{$size}-#{$i*5}{ //interpolacion. Interpolacion agarrar la variable para construir selectores
+        width: $i*5%;
+      }
+    }
+  }
 }
