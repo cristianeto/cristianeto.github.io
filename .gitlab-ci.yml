@@ -4,8 +4,7 @@ production_deployment:
   script:
     - pip install awscli
     - aws s3 rm --recursive s3://$AWS_BUCKET/
-    - aws s3 cp ./assets s3://$AWS_BUCKET/ --recursive
-    - aws s3 cp ./index.html s3://$AWS_BUCKET/
+    - aws s3 cp ./ s3://$AWS_BUCKET/ --recursive
     - aws cloudfront create-invalidation --distribution-id EKOV1PHRRMFNV --paths "/*"
   only:
     - master
